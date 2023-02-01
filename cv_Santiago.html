@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Roboto:wght@300&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    
+    <style >
+      * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.container {
+    display: flex;
+    padding: 0 20%;
+    margin-top: 50px;
+}
+aside {
+    width: 30%;
+    background-color: rgb(46, 71, 138);
+    color: white;
+    padding: 5%;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+.margin-icons {
+    margin-right: 10px;
+}
+.flex-container {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.avatar img {
+    width: 80%;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+    box-shadow: 0px 0px 10px rgb(245, 246, 247);
+}
+.aaa {
+    display: none;
+}
+
+.margin-title {
+    margin: 60px 0;
+}
+h3 {
+    margin-bottom:15px;
+}
+.star {
+    font-size: 18px;
+}
+
+main {
+    width: 70%;
+    padding: 5%;
+    background-color: rgb(245, 246, 247);
+}
+
+h1 {
+    color: rgb(46, 71, 138);
+    font-size: 50px;
+} 
+hr {
+    width: 10%;
+    border-style:none;
+    height: 4px;
+    background-color: slategrey;
+    margin:2% 0;
+}
+h2, section h3 {
+    color:steelblue
+}
+h4 {
+    font-weight: bold;
+    margin-bottom: 1%;
+    margin-top: 3%;
+}
+
+.logo {
+    margin-left: 2%;
+    height: 18px;
+}
+.date {
+    color: gray;
+    font-weight: lighter;
+    margin-bottom: 1%;
+}
+section span {
+    margin: 0 1%;
+}
+ul {
+    margin-left: 3%;
+}
+ul li {
+    font-family: 'Assistant', sans-serif;
+    font-weight: 600;
+}
+.align {
+    align-items: center;
+}
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+.wrap a {
+    width:20%;
+    margin: 2%;
+}
+.wrap img {
+    width: 100%;
+
+}
+.social img {
+    filter: invert();
+}
+
+.companies {
+    background-color: rgb(245, 246, 247);
+    justify-content: space-between;
+}
+.companies img {
+    margin: 5% 5%;
+    width: 30%;
+}
+
+.download {
+    position:fixed;
+    width: 50px;
+    top: 20px;
+    left: 95%;
+    color: gray;
+}
+.download span {
+    font-size: 50px;
+    cursor: pointer;
+    transition: font-size 0.3s;
+}
+
+.download span:hover {
+    font-size: 60px;
+}
+
+@media (max-width: 1300px) {
+    .container {
+        padding: 0;
+        margin-top: 0;
+    }
+    .aside, main {
+        width: 100%;
+    }
+    .download {
+        position: relative;
+        left: 80%;
+    }
+}
+
+@media (max-width: 500px) {
+    .container {
+        flex-direction: column;
+        font-size: 20px;
+    }
+    aside {
+        width: 100%;
+        padding: 10%;
+    }
+    aside h3 {
+        text-align: center;
+    }
+    main {
+        width: 100%;
+        padding: 10%;
+    }
+    .personal-profile p, ul li {
+        text-align: justify;
+    }
+    .aaa {
+        display: block;
+    }
+
+    .aaa h1, .aaa h2 {
+        color: rgb(127, 155, 218);
+        text-shadow: 0 0 3px white;
+    }
+    .download {
+        left: 80%;
+        position: fixed;
+    }
+}
+
+
+@media print {
+    .container { 
+        margin: 0;
+        padding: 0;
+    }
+    .container p, .container li, .container a{
+        font-size: 12px;
+    }
+    aside {
+        padding: 2%;
+    }
+    
+    .margin-title {
+        margin: 30px 0;
+    }
+    
+    .wrap {
+     flex-wrap: nowrap;
+     flex-direction: column;
+     align-items: flex-start;
+     padding-right: 10%;
+    }
+    .wrap a img {
+        display: none;
+    }
+    .wrap a[href]::after {
+        content:attr(href);
+    }
+    .download {
+        display: none;
+    }
+    .no-print {
+        display: none;
+    }
+}
+
+@page {
+    margin: 5px;
+}
+Footer
+© 2023 GitHub, Inc.
+Footer navigation
+Terms
+Priv
+    </style>
+    <title>CV_SANTIAGO VASQUEZ</title>
+  </head>
+  <body>
+    <div class="container">
+      <aside>
+        <div class="avatar">
+          <img src="foto.jpeg" alt="" />
+        </div>
+        <div class="aaa margin-title">
+          <h1>SANTIAGO VASQUEZ SANCHEZ</h1>
+          <hr />
+          <h2>ESTUDIANTE DE TERMINO DE INGENIERIA EN SISTEMAS</h2>
+        </div>
+        <div class="contact margin-title">
+          <h3>DATOS PERSONALES</h3>
+          <div class="flex-container">
+            <span class="material-icons margin-icons"> room </span>
+            <p>
+             C/ Abraham #196, Residencial Antonia, Manoguayabo. Santo Domingo Oeste
+
+            </p>
+          </div>
+          <div class="flex-container">
+            <span class="material-icons margin-icons"> email </span>
+            <p>santiagovasquez1402@gmail.com</p>
+          </div>
+          <div class="flex-container">
+            <span class="material-icons margin-icons"> laptop_windows </span>
+            <a href="www.anywebsite.com">https://github.com/Santvs14?tab=repositories</a>
+          </div>
+        </div>
+        <div class="margin-title">
+          <h3></h3>
+          <div class="flex-container" class="flex-container">
+            <div class="icons flex-container margin-icons">
+              
+            </div>
+           
+          </div>
+          <div class="flex-container">
+            <div class="flex-container margin-icons">
+              
+            </div>
+            
+          </div>
+          <div class="flex-container">
+            <div class="flex-container margin-icons">
+              
+            </div>
+            
+          </div>
+          <div class="flex-container">
+            <div class="flex-container margin-icons">
+             
+            </div>
+            
+          </div>
+          <div class="flex-container">
+            <div class="flex-container margin-icons">
+              
+            </div>
+            
+          </div>
+          <div class="flex-container">
+            <div class="flex-container margin-icons">
+              
+            </div>
+            
+          </div>
+        </div>
+        <div class=" margin-title">
+          <h3></h3>
+          <div class="flex-container">
+            
+            
+          </div>
+          <div class="flex-container">
+            
+            
+          </div>
+          <div class="flex-container">
+            
+            <
+          </div>
+          <div class="social margin-title">
+            
+            <div class="wrap">
+              
+            </div>
+          </div>
+          <div class="margin-title no-print">
+            
+            <div class="wrap companies">
+             
+            </div>
+          </div>
+        </div>
+      </aside>
+      <main>
+        <div class="download">
+          <span class="material-icons" id="print">
+            print
+            </span>
+        </div>
+        <div>
+          <h1>SANTIAGO VASQUEZ SANCHEZ</h1>
+          <hr />
+          <h2>ESTUDIANTE DE TERMINO DE INGENIERIA EN SISTEMAS</h2>
+          <section class="personal-profile margin-title">
+            <h3>OBJETIVOS</h3>
+            <p>
+              Quiero poner todos mis conocimientos en práctica para la administración de recursos informáticos y buen funcionamiento de la empresa,tener la oportunidad de crecimiento en la empresa,aprender lo que no tenga conocimiento para seguir formandome como profesional,tener un sueldo atractivo que me permita cubrir mis necesidades asi como tambien poder ayudar a otros sin que esto afecte mi capacidad economica.
+            </p>
+          </section>
+          <section class="margin-title">
+            <h3>EXPERIENCIA  LABORAL</h3>
+               <h5> 2022 - We Supply Dominicana</h5>
+            <div>
+              <h4>Asistente de Operaciones</h4>
+             
+              <ul>
+                <li>
+                 Supervisión de personal.
+                </li>
+                <li>
+                  Desarrollo de proyectos(Mediado y Largo Plazo).
+                </li>
+                 <li>
+                  Manejo de clientes tanto externos como internos.
+                </li>
+                 <li>
+                  Planificacion de Proyectos.
+                </li>
+                 <li>
+                  Scrum Master.
+                </li>
+                 <li>
+                 Proyecciones de compras semanales.
+                </li>
+                <li>
+                 Gestión y seguimiento de compras.
+                </li>
+                <li>
+                 Gestión de proveedores y clientes
+                </li>
+                <li>
+                Diseño y planificación de ruta de entregas diarias.
+                </li>
+                <li>
+                Diseño y planificación de ruta de entregas diarias.
+                </li>
+                <li>
+                Despacho de rutas a clientes, junto al equipo de Almacén y Distribución.
+                </li>
+                <li>
+                Supervisión de recepción y despacho de mercancías.
+                </li>
+                <li>
+                Supervisión de organización de mercancías en Almacén
+                </li>
+                <li>
+               Logística e inventario de almacenes.
+                </li>
+                <li>
+                Soporte en otras actividades de la Gerencia de Operaciones.
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h4>Otros Conocimientos y Prácticas</h4>
+              
+              <ul>
+                <li>
+                  Páginas Web,Html,Css,JavaScript y Php.
+
+                </li>
+                <li>
+                  Manejo de Office
+                </li>
+                <li>
+                  Instalación y Seguridad con Linux
+                </li>
+                <li>
+                  Ciberseguridad
+                </li>
+                <li>
+                  Sistema de Contabilidad Quickbooks
+                </li>
+                <li>
+                  Proyectos en Jira
+                </li>
+                <li>
+                  Conocimientos de metodologías Agiles 
+                </li>
+                <li>
+                  Manejo de Illustrator (Nivel alto)
+                </li>
+                <li>
+                  Manejo de photoshop (Nivel alto) 
+                </li>
+                <li>
+                  Api React, C#,  Python,  Sql Server, Postman, Jypiter, Arduino IED
+                </li>
+                <li>
+                   Manejo de proyectos  utilizando SEO(4 años),Search Console,Google Analytics,SE Ranking,Microsoft ISS SEO Toolkit.
+                </li>
+
+
+
+
+
+              </ul>
+            </div>
+            <div>
+              <h4>Estudios Profesionales</h4>
+             
+              <ul>
+                <li>
+                 Universidad Nacional Pedro Henríquez Ureña (UNPHU) - Ingeniería en Sistemas (2016- Nov 2023)
+                </li>
+                <li>
+                  INFOTEP - Técnico en Ciberseguridad (2019-2020)
+                </li>
+                <li>
+                  Universidad APEC – Inglés técnico (2009-2013) 
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h4>Certificados y Cursos</h4>
+              
+              <ul>
+                <li>
+                  International Cybersecurity Institute (ICSI)- CNSS Certified Network Security (Mayo 2020)
+                </li>
+                <li>
+                  INFOTEP- Diseñador de páginas web y CSS (Agosto 2017)
+                </li>
+                 <li>
+                  INFOTEP- Manejador de programas de oficina, Word, Excel, Power Point y Digitación (Junio 2016)
+                </li>
+              </ul>
+            </div>
+          </section>
+         
+
+    <script>
+      let print = document.querySelector('#print');
+      print.onclick = () => {
+        window.print();
+      }
+    </script>
+  </body>
+</html>
